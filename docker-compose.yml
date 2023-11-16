@@ -7,8 +7,8 @@ services:
     environment:
       PYTHONUNBUFFERED: 1
     ports:
-      - 80:80
-      - 443:443
+      - 5454:5454
+      - 82:82
     volumes:
       - "./proxy:/proxy"
     container_name: proxy

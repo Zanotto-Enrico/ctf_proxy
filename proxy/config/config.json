@@ -2,26 +2,22 @@
     "services": [
         {
             "name": "http_service",
-            "target_ip": "http_service",
-            "target_port": 80,
-            "listen_port": 80,
+            "target_ip": "10.32.59.2",
+            "target_port": 8282,
+            "listen_port": 82,
             "http": true
         },
-        {
-            "name": "https_service",
-            "target_ip": "https_service",
-            "target_port": 443,
-            "listen_port": 443,
-            "http": true,
-            "ssl": {
-                "server_certificate": "example.pem",
-                "server_key": "example.pem"
-            }
-        }
+	{
+	    "name": "tcp_service",
+    	    "target_ip": "10.32.59.2",
+	    "target_port": 3434,
+	    "listen_port": 5454,
+	    "http": false	    
+	}
     ],
     
     "global_config": {
-        "keyword": "EH! VOLEVI",
+        "keyword": "SAAR{M4yb3_th1s_1s_f4k3_l3ts_th1nk___}",
         "verbose": false,
         "dos": {
             "enabled": false,
